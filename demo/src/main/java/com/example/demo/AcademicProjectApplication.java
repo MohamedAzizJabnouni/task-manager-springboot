@@ -43,7 +43,7 @@ public class AcademicProjectApplication implements CommandLineRunner, Repository
 
 		// tasks
 		Task task1 = new Task("Write Unit Tests", "Write unit tests for the UserService class using JUnit and Mockito.");
-		Task task2 = new Task("Write Integration Tests", "Write unit tests for the UserService class using JUnit and Mockito.");
+		Task task2 = new Task("Write Integration Tests", "Write integration tests for the UserService class using JUnit and Mockito.");
 		taskRepository.save(task1);
 		taskRepository.save(task2);
 

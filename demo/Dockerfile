@@ -10,7 +10,7 @@ COPY target/demo-0.0.1-SNAPSHOT.jar app.jar
 # Expose the application port (default Spring Boot port is 8080)
 EXPOSE 8081
 
-# Set environment variables for PostgreSQL (adjust if necessary)
+# Set environment variables for PostgreSQL
 ENV SPRING_DATASOURCE_URL=jdbc:postgresql://host.docker.internal:5432/task_manager
 ENV SPRING_DATASOURCE_USERNAME=postgres
 ENV SPRING_DATASOURCE_PASSWORD=postgres

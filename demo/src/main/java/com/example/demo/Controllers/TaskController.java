@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-@Controller
+@RestController
 @RequestMapping("/api/tasks")
 public class TaskController {
 
@@ -27,7 +27,7 @@ public class TaskController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Task> getTask(Long id){
+    public Optional<Task> getTask(@PathVariable Long id){
         return taskService.getTaskById(id);
     }
     @DeleteMapping("/{id}")

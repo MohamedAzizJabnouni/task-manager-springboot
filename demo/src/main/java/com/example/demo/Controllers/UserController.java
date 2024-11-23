@@ -29,7 +29,7 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public Optional<User> getUserById(Long id){
+    public Optional<User> getUserById(@PathVariable Long id){
         return userService.getUserById(id);
     }
 
@@ -39,7 +39,7 @@ public class UserController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteUserById(Long id){
+    public void deleteUserById(@PathVariable Long id){
         userService.DeleteUser(id);
     }
 
