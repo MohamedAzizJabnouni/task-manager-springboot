@@ -27,20 +27,9 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                sh 'docker build -t your-image-name:${BUILD_NUMBER} .'
+                sh 'docker build -t task-manager:${BUILD_NUMBER} .'
             }
         }
 
-        stage('Docker Push') {
-            steps {
-                // Add commands to push to your Docker registry
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                // Add commands to deploy your application
-            }
-        }
     }
 }
