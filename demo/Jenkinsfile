@@ -31,7 +31,6 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-            dir('demo') {
                 dir('demo') {
                     sh 'docker build -t task-manager:${BUILD_NUMBER} .'
                 }
